@@ -11,7 +11,9 @@ namespace DurinsDayForecaster
         {
             var date = new DateTime(2016, 2, 1);
         
-            var result = MoonPhaseCalculator.FindNext(date, MoonPhases.FullMoon);
+            var nextFullMoon = MoonPhaseCalculator.FindNext(date, MoonPhases.FullMoon);
+
+            var decemberSolstice = DecemberSolsticeCalculator.FindSolstice(date);
         }
 
     }

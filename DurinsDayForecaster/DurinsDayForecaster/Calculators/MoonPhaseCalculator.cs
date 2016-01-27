@@ -22,7 +22,7 @@ namespace DurinsDayForecaster.Calculators
 
         static int K(DateTime date)
         {
-            return (int)Math.Round((DecimalDate(date) - 2000) * 12.3685);
+            return (int) Math.Round((DecimalDate(date) - 2000) * 12.3685);
         }
 
         static double T(double k)

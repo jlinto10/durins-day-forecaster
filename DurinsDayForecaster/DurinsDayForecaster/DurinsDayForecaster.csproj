@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculators\DecemberSolsticeCalculator.cs" />
+    <Compile Include="Calculators\DurinsDayCalculator.cs" />
     <Compile Include="Extensions\AstronomyExtensionscs.cs" />
     <Compile Include="Calculators\MoonPhaseCalculator.cs" />
     <Compile Include="Program.cs" />

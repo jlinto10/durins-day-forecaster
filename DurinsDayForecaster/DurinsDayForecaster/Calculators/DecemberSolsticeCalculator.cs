@@ -13,18 +13,18 @@ namespace DurinsDayForecaster.Calculators
         /// </summary>
         /// <param name="date"></param>
         /// <returns></returns>
-        public static DateTime FindSolstice(DateTime date)
+        public static DateTime FindSolstice(int year)
         {
-            var Y = date.Year - 2000;
+            var Y = year - 2000;
             var D = 0.2422;
             var L = Y / 4;
 
             // C is century, I have no idea where this comes from. Maybe a table?
-            var C = (date.Year < 2000) ? 22.6 : 21.94;
+            var C = (year < 2000) ? 22.6 : 21.94;
 
             var day = (int)((Y * D) + C) - L;
 
-            return new DateTime(date.Year, 12, day);
+            return new DateTime(year, 12, day);
         }
     }
 }

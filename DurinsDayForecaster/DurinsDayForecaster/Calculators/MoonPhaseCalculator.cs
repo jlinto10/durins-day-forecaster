@@ -8,24 +8,24 @@ namespace DurinsDayForecaster.Calculators
 
         private const double DaysInAYear = 365.25;
 
-        public static DateTime FindNext(DateTime date, double moonPhase)
+        public DateTime FindNext(DateTime date, double moonPhase)
         {
             var jde = MoonPhaseInJDE(date, moonPhase);
 
             return jde.ToDateTime();
         }
 
-        static double DecimalDate(DateTime date)
+        private double DecimalDate(DateTime date)
         {
             return date.Year + (date.DayOfYear / DaysInAYear);
         }
 
-        static int K(DateTime date)
+        private int K(DateTime date)
         {
             return (int) Math.Round((DecimalDate(date) - 2000) * 12.3685);
         }
 
-        static double T(double k)
+        private double T(double k)
         {
             return k / 1236.85;
         }
@@ -37,7 +37,7 @@ namespace DurinsDayForecaster.Calculators
         /// <param name="date"></param>
         /// <param name="moonPhase"></param>
         /// <returns></returns>
-        static double MoonPhaseInJDE(DateTime date, double moonPhase)
+        private double MoonPhaseInJDE(DateTime date, double moonPhase)
         {
             var k = K(date) + moonPhase;
 
@@ -54,7 +54,7 @@ namespace DurinsDayForecaster.Calculators
 
             // WARNING
             // Additional corrections are not included
-            // Small inaccuracies may be present
+            // Small inaccuracies will be present
 
             return jde;
         }

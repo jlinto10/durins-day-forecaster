@@ -5,13 +5,11 @@ namespace DurinsDayForecaster
 {
     class Program
     {
-
         static void Main(string[] args)
         {
+            var calculator = new DurinsDayCalculator();
 
-            var durinsDay = DurinsDayCalculator.GetDurinsDay(DateTime.Today.Year);
-
+            var durinsDay = calculator.GetDurinsDay(2017);
         }
-
     }
 }

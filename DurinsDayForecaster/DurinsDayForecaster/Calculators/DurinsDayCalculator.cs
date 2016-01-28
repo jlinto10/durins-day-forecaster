@@ -15,26 +15,38 @@ namespace DurinsDayForecaster.Calculators
         // much, I fear, for it passes our skill in these days to guess 
         // when such a time will come again.” – Thorin Oakenshield (The Hobbit)
 
-        public static DateTime GetDurinsDay(int year)
+        // According to the dwarves, the last day of autumn was the
+        // beginning of November
+        // http://lotr.wikia.com/wiki/Durin's_Day
+        
+        // First waxing crecsent
+
+        private int _thisYear = DateTime.Today.Year;
+        
+        public DateTime GetDurinsDay(int? year = null)
         {
-            var autumnEquinox = new DateTime(year, 9, 20); // Doesn't need to be accurate...
+            var durinsYear = year ?? _thisYear;
 
-            var winterSolstice = DecemberSolsticeCalculator.FindSolstice(year);
+            var beginningOfAutumn = new DateTime(durinsYear, 9, 20); // Doesn't need to be accurate...
 
-            var firstQuarterMoons = GetMoonPhases(autumnEquinox, winterSolstice, MoonPhases.FirstQuarter);
+            var endOfAutumn = new DateTime(durinsYear, 11, 1);
+            
+            var fullMoons = GetMoonPhases(beginningOfAutumn, endOfAutumn, MoonPhases.FullMoon);
 
-            return firstQuarterMoons.LastOrDefault();
+            return fullMoons.LastOrDefault();
         }
 
-        public static IEnumerable<DateTime> GetMoonPhases(DateTime start, DateTime end, double moonPhase)
+        private IEnumerable<DateTime> GetMoonPhases(DateTime start, DateTime end, double moonPhase)
         {
+            var calculator = new MoonPhaseCalculator();
+
             var nextMoonPhase = start;
 
             while(nextMoonPhase < end)
             {
                 var pivot = nextMoonPhase == start ? nextMoonPhase : nextMoonPhase.AddDays(15);
 
-                nextMoonPhase = MoonPhaseCalculator.FindNext(pivot, moonPhase);
+                nextMoonPhase = calculator.FindNext(pivot, moonPhase);
 
                 if(nextMoonPhase > start && nextMoonPhase < end)
                 {

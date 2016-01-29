@@ -1,4 +1,4 @@
-# Durin's Day Calculator (WIP)
+# Durin's Day Forecaster (WIP)
 
 An extremely useful tool that will discover the exact day of Durin's day this year (or any year). Currently a work in progress (accuracy is still questionable at the moment). It turns out that the dwarvish holiday is not very easy to predict, and there are many interpretations of when durin's day will happen.
 

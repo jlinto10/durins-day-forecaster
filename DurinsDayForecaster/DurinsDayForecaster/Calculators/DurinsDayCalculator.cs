@@ -21,9 +21,14 @@ namespace DurinsDayForecaster.Calculators
         
         // First waxing crecsent
 
-        private int _thisYear = DateTime.Today.Year;
-        
-        public DateTime GetDurinsDay(int? year = null)
+        private readonly int _thisYear;
+
+        public DurinsDayCalculator()
+        {
+            _thisYear = DateTime.Today.Year;
+        }
+
+        public DateTime DurinsDay(int? year = null)
         {
             var durinsYear = year ?? _thisYear;
 
@@ -34,6 +39,22 @@ namespace DurinsDayForecaster.Calculators
             var fullMoons = GetMoonPhases(beginningOfAutumn, endOfAutumn, MoonPhases.FullMoon);
 
             return fullMoons.LastOrDefault();
+        }
+
+        public int DaysUntilDurinsDay()
+        {
+            var today = DateTime.Today;
+
+            var durinsDay = DurinsDay(today.Year);
+
+            if (today > durinsDay)
+            {
+                durinsDay = DurinsDay(today.Year + 1);
+            }
+
+            var timeSpan = durinsDay - today;
+
+            return (int) timeSpan.TotalDays;
         }
 
         private IEnumerable<DateTime> GetMoonPhases(DateTime start, DateTime end, double moonPhase)

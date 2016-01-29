@@ -9,7 +9,9 @@ namespace DurinsDayForecaster
         {
             var calculator = new DurinsDayCalculator();
 
-            var durinsDay = calculator.GetDurinsDay(2017);
+            var durinsDay = calculator.DurinsDay(2016);
+
+            var daysUntilDurinsDay = calculator.DaysUntilDurinsDay();
         }
     }
 }

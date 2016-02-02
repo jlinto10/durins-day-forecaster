@@ -7,6 +7,7 @@ namespace DurinsDayForecaster.Calculators
 {
     public class DurinsDayCalculator
     {
+        private const int LunarCycle = 30; // rounding up
 
         // “The first day of the dwarves’ New Year is, as all should know, 
         // the first day of the last moon of Autumn on the threshold of 
@@ -18,8 +19,9 @@ namespace DurinsDayForecaster.Calculators
         // According to the dwarves, the last day of autumn was the
         // beginning of November
         // http://lotr.wikia.com/wiki/Durin's_Day
-        
-        // First waxing crecsent
+
+        // Let's go with the last new moon of autumn
+        // http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 
         private readonly int _thisYear;
 
@@ -30,15 +32,15 @@ namespace DurinsDayForecaster.Calculators
 
         public DateTime DurinsDay(int? year = null)
         {
-            var durinsYear = year ?? _thisYear;
-
-            var beginningOfAutumn = new DateTime(durinsYear, 9, 20); // Doesn't need to be accurate...
-
-            var endOfAutumn = new DateTime(durinsYear, 11, 1);
+            var y = year ?? _thisYear;
             
-            var fullMoons = GetMoonPhases(beginningOfAutumn, endOfAutumn, MoonPhases.FullMoon);
+            var endOfAutumn = new DateTime(y, 11, 1);
 
-            return fullMoons.LastOrDefault();
+            var start = endOfAutumn.AddDays(-1 * LunarCycle);
+
+            var newMoons = GetMoonPhases(start, endOfAutumn, MoonPhases.NewMoon);
+
+            return newMoons.LastOrDefault();
         }
 
         public int DaysUntilDurinsDay()

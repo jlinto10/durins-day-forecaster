@@ -1,5 +1,4 @@
 ﻿using DurinsDayForecaster.Calculators;
-using System;
 
 namespace DurinsDayForecaster
 {
@@ -9,7 +8,7 @@ namespace DurinsDayForecaster
         {
             var calculator = new DurinsDayCalculator();
 
-            var durinsDay = calculator.DurinsDay(2016);
+            var durinsDay = calculator.DurinsDay(DateTime.Today.Year);
 
             var daysUntilDurinsDay = calculator.DaysUntilDurinsDay();
         }

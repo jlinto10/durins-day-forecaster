@@ -20,7 +20,7 @@ This is exactly how my alogirthm works. Using the last new moon of autumn guaran
     
     var daysUntilDurinsDay = new DurinsDayCalculator().DaysUntilDurinsDay();
 
-In 2014, the following author calculated Ocotober 24. I ran that year through my tool and got the same output. So I'm assuming that with the logic stated above my calculator is fairly accurate.
+In 2014, the following author calculated October 24. I ran that year through my tool and got the same output. So I'm assuming that with the logic stated above my calculator is fairly accurate.
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 

@@ -2,7 +2,7 @@
 
 An extremely useful tool that will predict Durin's day this year (or any year).
 
-It turns out that Tolkien never created a dwarvish calendar. However, we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult to predict so most Tolkien fans settle for the last new moon of Autumn (dwarvish Autumn that is).
+It turns out that Tolkien never created a dwarvish calendar. However, we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most Tolkien fans settle for the last new moon of Autumn (dwarvish Autumn that is).
 
 ### Usage
 

@@ -2,13 +2,13 @@
 
 An extremely useful tool that will predict Durin's Day.
 
->The first day of the dwarves’ New Year is, as all should know, 
+>The first day of the dwarvesâ€™ New Year is, as all should know, 
 >the first day of the last moon of Autumn on the threshold of 
->Winter. We still call it Durin’s Day when the last moon of Autumn 
+>Winter. We still call it Durinâ€™s Day when the last moon of Autumn 
 >and the sun are in the sky together.But this will not help us 
 >much, I fear, for it passes our skill in these days to guess 
 >when such a time will come again.
->– Thorin Oakenshield (The Hobbit)
+>â€“ Thorin Oakenshield (The Hobbit)
 
 It turns out that Tolkien never created a dwarvish calendar. However, we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most Tolkien fans settle for the last new moon of Autumn.
 
@@ -22,7 +22,7 @@ Run the following in your Nuget Package Manager:
 
 ### Use The Code
 
-    var durinsDay = new DurinsDayCalculator().GetDurinsDay(2016);
+    var durinsDay = new DurinsDayCalculator().DurinsDay(2016);
     
     var daysUntilDurinsDay = new DurinsDayCalculator().DaysUntilDurinsDay();
 

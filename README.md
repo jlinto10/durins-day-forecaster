@@ -14,14 +14,20 @@ It turns out that Tolkien never created a dwarvish calendar. However, we do know
 
 This is exactly how my alogirthm works. Using the last new moon of autumn guarantees better foresight and accuracy.
 
-### Usage
+### Get The Code
+
+Run the following in your Nuget Package Manager:
+
+    Install-Package DurinsDayForecaster
+
+### Use The Code
 
     var durinsDay = new DurinsDayCalculator().GetDurinsDay(2016);
     
     var daysUntilDurinsDay = new DurinsDayCalculator().DaysUntilDurinsDay();
 
+### Testing
+
 In 2014, the following author calculated October 24. I ran that year through my tool and got the same output. So I'm assuming that with the logic stated above my calculator is fairly accurate.
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
-
-Additional functionality, and improved accuracy will be added in the future.

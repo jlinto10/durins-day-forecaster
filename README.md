@@ -28,6 +28,6 @@ Run the following in your Nuget Package Manager:
 
 ### Testing
 
-In 2014, the following author calculated October 24. I ran that year through my tool and got the same output. So I'm assuming that with the logic stated above my calculator is fairly accurate.
+In 2014, the following author calculated October 23rd. I ran 2014 through my tool and got the same output. So I'm assuming that with the logic stated above my calculator is fairly accurate.
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day

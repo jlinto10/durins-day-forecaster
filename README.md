@@ -10,7 +10,7 @@ Extremely useful tool for predicting Durin's Day.
 >when such a time will come again.
 >– Thorin Oakenshield (The Hobbit)
 
-It turns out that Tolkien never created a dwarvish calendar. However, we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most Tolkien fans settle for the last new moon of Autumn.
+It turns out that Tolkien never created a dwarvish calendar. However, we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most of us Tolkien fans settle for the last new moon of Autumn.
 
 This is exactly how my alogirthm works. Using the last new moon of autumn guarantees better foresight and accuracy.
 
@@ -26,7 +26,7 @@ Run the following in your Nuget Package Manager:
     
 ### Testing
 
-In 2014, the following author calculated October 23rd. I ran 2014 through my tool and got the same output (See Testing project). So I'm assuming that with the logic stated above my calculator is fairly accurate.
+In 2014, the following author calculated October 23rd. I passed 2014 into my tool and got the correct output (See the `Testing` project).
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 
@@ -34,7 +34,7 @@ http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 
 #### Version 1.0.0.0
 
-- Initial Release
+- Initial release
 
 #### Version 1.0.0.1
 

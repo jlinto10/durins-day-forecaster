@@ -43,4 +43,4 @@ http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 #### Version 1.0.0.2
 
 - Fixes never ending loop when start date happens to land on durins day (Durin's Day 2024)
-- Additional testing added
+- Additional test coverage added

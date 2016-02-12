@@ -2,7 +2,7 @@
 
 namespace DurinsDayForecaster.Extensions
 {
-    public static class AstronomyExtensionscs
+    internal static class AstronomyExtensionscs
     {
 
         /// <summary>

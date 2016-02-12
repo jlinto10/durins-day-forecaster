@@ -3,7 +3,7 @@ using System;
 
 namespace DurinsDayForecaster.Calculators
 {
-    public class MoonPhaseCalculator
+    internal class MoonPhaseCalculator
     {
 
         private const double DaysInAYear = 365.25;

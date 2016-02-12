@@ -1,6 +1,6 @@
 ﻿namespace DurinsDayForecaster.Structs
 {
-    public struct MoonPhases
+    internal struct MoonPhases
     {
         public const double NewMoon = 0.0;
         public const double FirstQuarter = 0.25;

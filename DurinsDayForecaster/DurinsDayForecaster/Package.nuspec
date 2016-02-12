@@ -3,12 +3,12 @@
   <metadata>
     <id>DurinsDayForecaster</id>
     <version>1.0.0</version>
-    <authors>Jeff</authors>
+    <Author>Jeff</Author>
     <owners>Jeff</owners>
     <projectUrl>https://github.com/jlinto10/durins-day-forecaster</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>An extremely useful tool that will predict Durin's Day.</description>
-    <releaseNotes>First release.</releaseNotes>
+    <Description>An extremely useful tool that will predict Durin's Day.</Description>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Durin's Durins Day The Hobbit</tags>
     <dependencies>

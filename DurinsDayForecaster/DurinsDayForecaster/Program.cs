@@ -10,8 +10,6 @@ namespace DurinsDayForecaster
             var calculator = new DurinsDayCalculator();
 
             var durinsDay = calculator.DurinsDay(DateTime.Today.Year);
-
-            var daysUntilDurinsDay = calculator.DaysUntilDurinsDay();
         }
     }
 }

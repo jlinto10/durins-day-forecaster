@@ -43,38 +43,17 @@ namespace DurinsDayForecaster.Calculators
             return newMoons.LastOrDefault();
         }
 
-        public int DaysUntilDurinsDay()
-        {
-            var today = DateTime.Today;
-
-            var durinsDay = DurinsDay(today.Year);
-
-            if (today > durinsDay)
-            {
-                durinsDay = DurinsDay(today.Year + 1);
-            }
-
-            var timeSpan = durinsDay - today;
-
-            return (int) timeSpan.TotalDays;
-        }
-
         private IEnumerable<DateTime> GetMoonPhases(DateTime start, DateTime end, double moonPhase)
         {
             var calculator = new MoonPhaseCalculator();
+            
+            var nextMoonPhase = calculator.FindNext(start, moonPhase);
 
-            var nextMoonPhase = start;
-
-            while(nextMoonPhase < end)
+            while (nextMoonPhase < end)
             {
-                var pivot = nextMoonPhase == start ? nextMoonPhase : nextMoonPhase.AddDays(15);
+                yield return nextMoonPhase;
 
-                nextMoonPhase = calculator.FindNext(pivot, moonPhase);
-
-                if(nextMoonPhase > start && nextMoonPhase < end)
-                {
-                    yield return nextMoonPhase;
-                }
+                nextMoonPhase = calculator.FindNext(nextMoonPhase.AddDays(LunarCycle / 2), moonPhase);
             }
         }
     }

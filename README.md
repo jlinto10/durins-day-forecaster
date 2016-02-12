@@ -24,10 +24,23 @@ Run the following in your Nuget Package Manager:
 
     var durinsDay = new DurinsDayCalculator().DurinsDay(2016);
     
-    var daysUntilDurinsDay = new DurinsDayCalculator().DaysUntilDurinsDay();
-
 ### Testing
 
-In 2014, the following author calculated October 23rd. I ran 2014 through my tool and got the same output. So I'm assuming that with the logic stated above my calculator is fairly accurate.
+In 2014, the following author calculated October 23rd. I ran 2014 through my tool and got the same output (See Testing project). So I'm assuming that with the logic stated above my calculator is fairly accurate.
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
+
+### Release Notes
+
+#### Version 1.0.0.0
+
+- Initial Release
+
+#### Version 1.0.0.1
+
+- Removes uneeded visibility
+
+#### Version 1.0.0.2
+
+- Fixes never ending loop when start date happens to land on durins day (Durin's Day 2024)
+- Additional testing added

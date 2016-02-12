@@ -1,6 +1,6 @@
 # Durin's Day Forecaster
 
-An extremely useful tool that will predict Durin's Day.
+Extremely useful tool for predicting Durin's Day.
 
 >The first day of the dwarves’ New Year is, as all should know, 
 >the first day of the last moon of Autumn on the threshold of 

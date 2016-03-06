@@ -7,9 +7,11 @@ namespace DurinsDayForecaster
     {
         static void Main(string[] args)
         {
+
             var calculator = new DurinsDayCalculator();
 
             var durinsDay = calculator.DurinsDay(DateTime.Today.Year);
+
         }
     }
 }

@@ -30,6 +30,22 @@ In 2014, the following author calculated October 23rd. I passed 2014 into my too
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 
+#### Durin's Day Cheatsheet 2014 - 2024
+
+| Year | Durin's Day |
+| ---- | ----------- |
+| 2014 | 10/23/2014  |
+| 2015 | 10/13/2015  |
+| 2016 | 10/30/2016  |
+| 2017 | 10/20/2017  |
+| 2018 | 10/9/2018   |
+| 2019 | 10/28/2019  |
+| 2020 | 10/16/2020  |
+| 2021 | 10/6/2021   |
+| 2022 | 10/25/2022  |
+| 2023 | 10/14/2023  |
+| 2024 | 10/2/2024   |
+
 ### Release Notes
 
 #### Version 1.0.0.2

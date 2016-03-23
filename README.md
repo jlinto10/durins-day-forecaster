@@ -54,6 +54,8 @@ For those of you who do not care about the code, and only want an answer.
 
 ### Release Notes
 
+[![Build status](https://ci.appveyor.com/api/projects/status/4cxufkrhjrv484my?svg=true)](https://ci.appveyor.com/project/masterjeef/durins-day-forecaster)
+
 #### Version 1.0.0.2
 
 - Fixes never ending loop when start date happens to land on Durin's Day (Durin's Day 2024)

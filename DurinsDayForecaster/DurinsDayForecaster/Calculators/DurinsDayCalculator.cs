@@ -9,20 +9,6 @@ namespace DurinsDayForecaster.Calculators
     {
         private const int LunarCycle = 30; // rounding up
 
-        // “The first day of the dwarves’ New Year is, as all should know, 
-        // the first day of the last moon of Autumn on the threshold of 
-        // Winter. We still call it Durin’s Day when the last moon of Autumn 
-        // and the sun are in the sky together.But this will not help us 
-        // much, I fear, for it passes our skill in these days to guess 
-        // when such a time will come again.” – Thorin Oakenshield (The Hobbit)
-
-        // According to the dwarves, the last day of autumn was the
-        // beginning of November
-        // http://lotr.wikia.com/wiki/Durin's_Day
-
-        // Let's go with the last new moon of autumn
-        // http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
-
         private readonly int _thisYear;
 
         public DurinsDayCalculator()
@@ -30,6 +16,11 @@ namespace DurinsDayForecaster.Calculators
             _thisYear = DateTime.Today.Year;
         }
 
+        /// <summary>
+        /// Finds Durin's Day for a given year, the current year will be used if the year is not provided.
+        /// </summary>
+        /// <param name="year">The year</param>
+        /// <returns>The date of Durin's Day</returns>
         public DateTime DurinsDay(int? year = null)
         {
             var y = year ?? _thisYear;
@@ -43,6 +34,13 @@ namespace DurinsDayForecaster.Calculators
             return newMoons.LastOrDefault();
         }
 
+        /// <summary>
+        /// Returns the dates at which a moon phase will occur, whitin a range.
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <param name="moonPhase"></param>
+        /// <returns></returns>
         private IEnumerable<DateTime> GetMoonPhases(DateTime start, DateTime end, double moonPhase)
         {
             var calculator = new MoonPhaseCalculator();

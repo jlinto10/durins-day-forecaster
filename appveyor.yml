@@ -9,4 +9,6 @@ deploy:
   api_key:
     secure: cgIAYWWKQmfI2JE9/RqVt/QzhTsggNiJ/Si+cMZwgWBPRdHvFfLI+jj6/vCaIcht
   skip_symbols: true
-  artifact: /.*\/artifacts\/.*\.nupkg/i
+artifacts:
+  - path: artifacts\**\*.nupkg
+    name: Durins Day Forcaster Nuget Packages

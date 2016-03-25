@@ -16,6 +16,8 @@ This is exactly how my algorithm works. Using the last new moon of autumn guaran
 
 ### Get The Code
 
+[![Build status](https://ci.appveyor.com/api/projects/status/4cxufkrhjrv484my?svg=true)](https://ci.appveyor.com/project/masterjeef/durins-day-forecaster)
+
 Run the following in your Nuget Package Manager:
 
     Install-Package DurinsDayForecaster
@@ -51,20 +53,3 @@ For those of you who do not care about the code, and only want an answer.
 | 2022 | 10/25/2022  |
 | 2023 | 10/14/2023  |
 | 2024 | 10/2/2024   |
-
-### Release Notes
-
-[![Build status](https://ci.appveyor.com/api/projects/status/4cxufkrhjrv484my?svg=true)](https://ci.appveyor.com/project/masterjeef/durins-day-forecaster)
-
-#### Version 1.0.0.2
-
-- Fixes never ending loop when start date happens to land on Durin's Day (Durin's Day 2024)
-- Additional test coverage added
-
-#### Version 1.0.0.1
-
-- Removes unnecessary visibility
-
-#### Version 1.0.0.0
-
-- Initial release

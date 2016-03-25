@@ -8,6 +8,6 @@
    <owners>$author$</owners>
    <requireLicenseAcceptance>false</requireLicenseAcceptance>
    <description>An extremely useful tool for predicting Durin's Day</description>
-   <tags>'Durin's Day' 'The Hobbit' 'Durin's Day Calculator' 'Durin's Day Forecaster'</tags>
+   <tags>Durins Day Hobbit Durin's Calculator Forecaster</tags>
  </metadata>
 </package>

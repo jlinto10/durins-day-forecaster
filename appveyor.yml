@@ -4,11 +4,3 @@ before_build:
 - cmd: nuget restore DurinsDayForecaster/DurinsDayForecaster.sln
 build:
   verbosity: minimal
-deploy:
-  provider: NuGet
-  api_key:
-    secure: cgIAYWWKQmfI2JE9/RqVt/QzhTsggNiJ/Si+cMZwgWBPRdHvFfLI+jj6/vCaIcht
-  skip_symbols: true
-artifacts:
-  - path: artifacts\**\*.nupkg
-    name: Durins Day Forcaster Nuget Packages

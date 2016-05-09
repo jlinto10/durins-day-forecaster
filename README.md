@@ -1,3 +1,5 @@
+﻿![alt text](https://raw.githubusercontent.com/masterjeef/durins-day-forecaster/master/lotr.png "Durin's Day Forecaster")
+
 # Durin's Day Forecaster
 
 Extremely useful tool for predicting Durin's Day.

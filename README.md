@@ -2,8 +2,6 @@
 
 # Durin's Day Forecaster
 
-Extremely useful tool for predicting Durin's Day.
-
 >The first day of the dwarves’ New Year is, as all should know,
 >the first day of the last moon of Autumn on the threshold of
 >Winter. We still call it Durin’s Day when the last moon of Autumn
@@ -12,9 +10,9 @@ Extremely useful tool for predicting Durin's Day.
 >when such a time will come again.
 >– Thorin Oakenshield (The Hobbit)
 
-It turns out that Tolkien never created a dwarvish calendar. However, we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most of us Tolkien fans settle for the last new moon of Autumn.
+Tolkien never created a dwarvish calendar, but we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most of us Tolkien fans settle for the last new moon of Autumn.
 
-This is exactly how my algorithm works. Using the last new moon of autumn guarantees better foresight and accuracy.
+This is how my algorithm works. Using the last new moon of autumn guarantees better foresight and accuracy.
 
 ### Get The Code
 

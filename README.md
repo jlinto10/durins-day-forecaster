@@ -2,6 +2,10 @@
 
 # Durin's Day Forecaster
 
+Extremely useful tool for predicting Durin's Day.
+
+[![Build status](https://ci.appveyor.com/api/projects/status/4cxufkrhjrv484my?svg=true)](https://ci.appveyor.com/project/masterjeef/durins-day-forecaster)
+
 >The first day of the dwarves’ New Year is, as all should know,
 >the first day of the last moon of Autumn on the threshold of
 >Winter. We still call it Durin’s Day when the last moon of Autumn
@@ -12,13 +16,11 @@
 
 Tolkien never created a dwarvish calendar, but we do know that the first day of winter according to the dwarves is November 1st. We also know that it's the last moon of autumn where the sun and the moon can both be seen in the sky. Unfortunately, calculating the latter can be very difficult so most of us Tolkien fans settle for the last new moon of Autumn.
 
-This is how my algorithm works. Using the last new moon of autumn guarantees better foresight and accuracy.
+This is how my algorithm works. Using the last new moon of the dwarvish autumn guarantees better foresight and accuracy.
 
 ### Get The Code
 
-[![Build status](https://ci.appveyor.com/api/projects/status/4cxufkrhjrv484my?svg=true)](https://ci.appveyor.com/project/masterjeef/durins-day-forecaster)
-
-Run the following in your Nuget Package Manager:
+To install Durins Day Forecaster, run the following command in the Package Manager Console
 
     Install-Package DurinsDayForecaster
 
@@ -34,11 +36,11 @@ A link to the post, for anyone who is interested.
 
 http://askmiddlearth.tumblr.com/post/73200106670/how-to-predict-durins-day
 
-Many other dates have been tested, and so far the dates I checked are accurate (Again see the `Testing` project).
+Many other dates have been tested, and so far the dates that I have checked are accurate (Again see the `Testing` project).
 
-#### Durin's Day Cheat sheet 2014 - 2024
+#### Durin's Day Cheat sheet (2014 - 2024)
 
-For those of you who do not care about the code, and only want an answer.
+For those of you who do not care about the code, and only want answers.
 
 | Year | Durin's Day |
 | ---- | ----------- |

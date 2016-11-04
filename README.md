@@ -27,7 +27,7 @@ To install Durins Day Forecaster, run the following command in the Package Manag
 ### Use The Code
 
 ```csharp
-    var durinsDay = new DurinsDayCalculator().DurinsDay(2016);
+var durinsDay = new DurinsDayCalculator().DurinsDay(2016);
 ```
 
 ### Testing
